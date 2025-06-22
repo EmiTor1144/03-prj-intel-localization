@@ -1,0 +1,293 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fa;
+  color: #222;
+}
+
+.hero {
+  background: linear-gradient(135deg, #035adb 0%, #64beff 100%);
+  color: #fff;
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+}
+.hero-logo {
+  width: 50%;
+  max-width: 400px;
+  min-width: 120px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-title {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+.hero-desc {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-divider {
+  border: none;
+  border-top: 2px solid #fff;
+  width: 60%;
+  margin: 1.2rem auto;
+  opacity: 0.4;
+}
+
+.timeline {
+  background: #eaf1f8;
+  padding: 2.5rem 1rem;
+}
+.timeline-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-color: #0068b5 #eaf1f8;
+  scrollbar-width: thin;
+  scroll-snap-type: x mandatory;
+}
+.timeline-card {
+  min-width: 210px;
+  max-width: 250px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.26);
+  padding: 1rem 0.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+.timeline-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.timeline-card img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.7rem 0;
+}
+.timeline-card h2 {
+  color: #0068b5;
+  margin: 0.2rem 0 0.1rem 0;
+  font-size: 1.3rem;
+}
+.timeline-card h3 {
+  margin: 0.1rem 0 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.timeline-card-desc-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 104, 181, 0.92);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  border-radius: 1px;
+  padding: 1.2rem 0.7rem;
+  text-align: center;
+  z-index: 2;
+}
+.timeline-card:hover .timeline-card-desc-overlay,
+.timeline-card:focus-within .timeline-card-desc-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.timeline-card-desc-overlay p {
+  margin: 0;
+  font-size: 1rem;
+}
+.timeline-year-divider {
+  border: none;
+  border-top: 2px solid #0068b5;
+  width: 40px;
+  margin: 0.5rem auto 0.7rem auto;
+  opacity: 0.5;
+}
+
+/* Custom scrollbar for Webkit browsers */
+.timeline-cards::-webkit-scrollbar {
+  height: 10px;
+}
+.timeline-cards::-webkit-scrollbar-thumb {
+  background: #0068b5;
+  border-radius: 6px;
+}
+.timeline-cards::-webkit-scrollbar-track {
+  background: #eaf1f8;
+  border-radius: 6px;
+}
+
+.three-column {
+  background: #fff;
+  padding: 2.5rem 1rem;
+}
+.three-column-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.three-column-item {
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 340px;
+  background: #f3f7fa;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  text-align: center;
+}
+.three-column-item h2 {
+  color: #0068b5;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.learn-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+  background: #0068b5;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.learn-more:hover {
+  background: #004a80;
+}
+
+.subscribe {
+  background: #eaf1f8;
+  padding: 2.5rem 1rem 3rem 1rem;
+  text-align: center;
+}
+.subscribe h2 {
+  color: #0068b5;
+  margin-bottom: 1.2rem;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.subscribe-form input[type="email"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #b5c9d6;
+  border-radius: 20px;
+  font-size: 1rem;
+  outline: none;
+  flex: 1 1 180px;
+}
+.subscribe-form button {
+  padding: 0.7rem 1.5rem;
+  background: #0068b5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.subscribe-form button:hover {
+  background: #004a80;
+}
+#subscribeSuccess {
+  display: none;
+  color: #0068b5;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0.7rem 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .three-column-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .hero-logo {
+    width: 80%;
+    max-width: 200px;
+    min-width: 70px;
+  }
+  .hero-title {
+    font-size: 1.2rem;
+  }
+  .hero-desc {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  .timeline-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 0.7rem;
+    padding-bottom: 0.5rem;
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+  .timeline-card {
+    min-width: 0;
+    max-width: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.7rem 0.5rem;
+    margin: 0 auto;
+  }
+  .timeline-card img {
+    max-width: 100px;
+    margin: 0.4rem 0;
+  }
+  .timeline-card h2 {
+    font-size: 1rem;
+  }
+  .timeline-card h3 {
+    font-size: 0.95rem;
+  }
+  .timeline-year-divider {
+    width: 24px;
+    margin: 0.3rem auto 0.5rem auto;
+  }
+}
+.timeline > div h2 {
+  /* Reduce padding/margin for the year */
+  margin-top: 2px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.timeline > div h3 {
+  /* Reduce margin space for the card subheading */
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
