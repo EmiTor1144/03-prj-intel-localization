@@ -326,6 +326,9 @@ body, .footer {
 .dark-mode #subscribeSuccess {
   color: #7ecbff !important;
 }
+.dark-mode #heroDesc {
+  color: #fff !important;
+}
 .dropdown-menu {
   background-color: rgb(10, 121, 206) !important;
   color: #fff !important;
