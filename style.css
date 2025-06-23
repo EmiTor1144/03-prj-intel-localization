@@ -144,7 +144,7 @@ body {
 }
 
 .three-column {
-  background: #fff;
+  background: #ffffff;
   padding: 2.5rem 1rem;
 }
 .three-column-row {
@@ -161,7 +161,7 @@ body {
   max-width: 340px;
   border-radius: 10px;
   padding: 1.5rem 1rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.318);
+  box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.236);
   text-align: center;
 }
 .three-column-item h2 {
@@ -300,6 +300,32 @@ body {
 .dark-mode #subscribeSuccess {
   color: #7ecbff !important;
 }
+.dropdown-menu {
+  background-color: rgb(10, 121, 206) !important;
+  color: #fff !important;
+  border: none;
+}
+.dropdown-menu .dropdown-item {
+  color: #fff !important;
+}
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgb(81, 154, 210) !important;
+  color: #fff !important;
+}
+.btn-secondary.dropdown-toggle {
+  background-color: #0a79ce !important;
+  border: none;
+  color: #fff !important;
+}
+.btn-secondary.dropdown-toggle:focus,
+.btn-secondary.dropdown-toggle:active {
+  background-color: #0b43a2 !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
 .dark-mode .dropdown-menu {
   background-color: #232b39 !important;
   color: #fff !important;
