@@ -97,11 +97,14 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(15, 81, 132, 0.92);
-  color: #fff;
+  word-break: break-word;
+  overflow-wrap: break-word;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  background: rgba(15, 81, 132, 0.92);
+  color: #fff;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
@@ -185,7 +188,7 @@ body {
 }
 
 .subscribe {
-  background: #eaf1f8;
+  background: #e4f2ff;
   padding: 2.5rem 1rem 3rem 1rem;
   text-align: center;
 }
@@ -208,6 +211,15 @@ body {
   font-size: 1rem;
   outline: none;
   flex: 1 1 180px;
+}
+.subscribe-form input[type="text"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #b5c9d6;
+  border-radius: 20px;
+  font-size: 1rem;
+  outline: none;
+  flex: 1 1 180px;
+  margin-bottom: 0;
 }
 .subscribe-form button {
   padding: 0.7rem 1.5rem;
@@ -286,6 +298,11 @@ body {
   color: #7ecbff !important;
 }
 .dark-mode .subscribe-form input[type="email"] {
+  background: #232b39 !important;
+  color: #e6e6e6 !important;
+  border: 1px solid #3a4a5e !important;
+}
+.dark-mode .subscribe-form input[type="text"] {
   background: #232b39 !important;
   color: #e6e6e6 !important;
   border: 1px solid #3a4a5e !important;
@@ -394,6 +411,27 @@ body {
     width: 24px;
     margin: 0.3rem auto 0.5rem auto;
   }
+  .timeline-card-desc-overlay {
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    height: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.85rem;
+    padding: 0.7rem 0.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .timeline-card-desc-overlay p {
+    font-size: 0.85rem;
+    padding: 0;
+    margin: 0;
+  }
+  .timeline-card:nth-child(5) .timeline-card-desc-overlay p {
+    font-size: 0.65rem;
+  }
 }
 .timeline > div h2 {
   /* Reduce padding/margin for the year */
@@ -406,4 +444,13 @@ body {
   /* Reduce margin space for the card subheading */
   margin-top: 6px;
   margin-bottom: 6px;
+}
+
+.footer {
+  background: #f7f9fa;
+  color: #222;
+  border-top: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 1px;
 }
