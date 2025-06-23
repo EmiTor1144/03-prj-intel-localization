@@ -375,7 +375,23 @@
       document.querySelector('.subscribe h2').textContent = 'Suscríbete a nuestro boletín';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Introduce tu correo electrónico';
       document.querySelector('.subscribe-form button').textContent = 'Suscribirse';
+      document.querySelector('label[for="subscribeAgree"]').textContent = 'Acepto recibir comunicaciones.';
+      document.querySelector('.subscribe-form input[type="text"]').placeholder = 'Introduce tu nombre';
       setSubscribeModalText('¡Gracias por suscribirte!', 'Te has suscrito exitosamente a nuestro boletín.');
+      // Footer
+      var footerLinks = document.querySelectorAll('.footer a');
+      if (footerLinks.length === 3) {
+        footerLinks[0].textContent = 'Política de Privacidad';
+        footerLinks[1].textContent = 'Términos de Uso';
+        footerLinks[2].textContent = 'Contacto';
+      }
+      document.querySelector('.footer div:last-child').textContent = '© 2024 Línea de Tiempo de Sostenibilidad de Intel. Todos los derechos reservados.';
+      // Light/Dark mode dropdown
+      document.getElementById('dropdownMenuButtonDark').textContent = 'Modos de luz';
+      document.getElementById('theme-light').textContent = 'Claro';
+      document.getElementById('theme-dark').textContent = 'Oscuro';
+      // Language dropdown
+      document.getElementById('dropdownMenuButtonLang').textContent = 'Idioma';
     });
 
     // Language switcher for English
@@ -456,7 +472,23 @@
       document.querySelector('.subscribe h2').textContent = 'Subscribe to our Newsletter';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Enter your email';
       document.querySelector('.subscribe-form button').textContent = 'Subscribe';
+      document.querySelector('label[for="subscribeAgree"]').textContent = 'I agree to receive communications.';
+      document.querySelector('.subscribe-form input[type="text"]').placeholder = 'Enter your name';
       setSubscribeModalText('Thank you for subscribing!', 'You have successfully subscribed to our newsletter.');
+      // Footer
+      var footerLinks = document.querySelectorAll('.footer a');
+      if (footerLinks.length === 3) {
+        footerLinks[0].textContent = 'Privacy Policy';
+        footerLinks[1].textContent = 'Terms of Use';
+        footerLinks[2].textContent = 'Contact';
+      }
+      document.querySelector('.footer div:last-child').textContent = '© 2024 Intel Sustainability Timeline. All rights reserved.';
+      // Light/Dark mode dropdown
+      document.getElementById('dropdownMenuButtonDark').textContent = 'Light Modes';
+      document.getElementById('theme-light').textContent = 'Light';
+      document.getElementById('theme-dark').textContent = 'Dark';
+      // Language dropdown
+      document.getElementById('dropdownMenuButtonLang').textContent = 'Language';
     });
 
     // Language switcher for Français
@@ -505,7 +537,7 @@
         {
           year: '2023',
           title: 'Électricité Renouvelable',
-          desc: "L'entreprise atteint 99% d'utilisation d'électricité renouvelable dans le monde, contribuant à réduire considérablement les émissions de carbone et à faire progresser les objectifs de durabilité à long terme d'Intel."
+          desc: "L'entreprise atteint 99% d'utilisation d'électricité renouvelable à l'échelle mondiale, contribuant à réduire considérablement les émissions de carbone et à faire progresser les objectifs de durabilité à long terme d'Intel."
         },
         {
           year: '2024',
@@ -537,7 +569,23 @@
       document.querySelector('.subscribe h2').textContent = 'Abonnez-vous à notre newsletter';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Entrez votre e-mail';
       document.querySelector('.subscribe-form button').textContent = 'S\'abonner';
+      document.querySelector('label[for="subscribeAgree"]').textContent = "J'accepte de recevoir des communications.";
+      document.querySelector('.subscribe-form input[type="text"]').placeholder = 'Entrez votre nom';
       setSubscribeModalText('Merci pour votre abonnement !', 'Vous vous êtes abonné avec succès à notre newsletter.');
+      // Footer
+      var footerLinks = document.querySelectorAll('.footer a');
+      if (footerLinks.length === 3) {
+        footerLinks[0].textContent = 'Politique de Confidentialité';
+        footerLinks[1].textContent = "Conditions d'utilisation";
+        footerLinks[2].textContent = 'Contact';
+      }
+      document.querySelector('.footer div:last-child').textContent = '© 2024 Chronologie de la Durabilité Intel. Tous droits réservés.';
+      // Light/Dark mode dropdown
+      document.getElementById('dropdownMenuButtonDark').textContent = 'Modes clairs';
+      document.getElementById('theme-light').textContent = 'Clair';
+      document.getElementById('theme-dark').textContent = 'Sombre';
+      // Language dropdown
+      document.getElementById('dropdownMenuButtonLang').textContent = 'Langue';
     });
 
     // Language switcher for Deutsch
@@ -618,7 +666,23 @@
       document.querySelector('.subscribe h2').textContent = 'Abonnieren Sie unseren Newsletter';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Geben Sie Ihre E-Mail-Adresse ein';
       document.querySelector('.subscribe-form button').textContent = 'Abonnieren';
+      document.querySelector('label[for="subscribeAgree"]').textContent = 'Ich stimme dem Erhalt von Mitteilungen zu.';
+      document.querySelector('.subscribe-form input[type="text"]').placeholder = 'Geben Sie Ihren Namen ein';
       setSubscribeModalText('Danke für Ihr Abonnement!', 'Sie haben sich erfolgreich für unseren Newsletter angemeldet.');
+      // Footer
+      var footerLinks = document.querySelectorAll('.footer a');
+      if (footerLinks.length === 3) {
+        footerLinks[0].textContent = 'Datenschutzrichtlinie';
+        footerLinks[1].textContent = 'Nutzungsbedingungen';
+        footerLinks[2].textContent = 'Kontakt';
+      }
+      document.querySelector('.footer div:last-child').textContent = '© 2024 Intel Nachhaltigkeits-Zeitstrahl. Alle Rechte vorbehalten.';
+      // Light/Dark mode dropdown
+      document.getElementById('dropdownMenuButtonDark').textContent = 'Lichtmodi';
+      document.getElementById('theme-light').textContent = 'Hell';
+      document.getElementById('theme-dark').textContent = 'Dunkel';
+      // Language dropdown
+      document.getElementById('dropdownMenuButtonLang').textContent = 'Sprache';
     });
 
     // Language switcher for 中文 (Chinese)
@@ -699,7 +763,23 @@
       document.querySelector('.subscribe h2').textContent = '订阅我们的新闻通讯';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = '请输入您的邮箱';
       document.querySelector('.subscribe-form button').textContent = '订阅';
+      document.querySelector('label[for="subscribeAgree"]').textContent = '我同意接收相关信息。';
+      document.querySelector('.subscribe-form input[type="text"]').placeholder = '请输入您的姓名';
       setSubscribeModalText('感谢您的订阅！', '您已成功订阅我们的新闻通讯。');
+      // Footer
+      var footerLinks = document.querySelectorAll('.footer a');
+      if (footerLinks.length === 3) {
+        footerLinks[0].textContent = '隐私政策';
+        footerLinks[1].textContent = '使用条款';
+        footerLinks[2].textContent = '联系';
+      }
+      document.querySelector('.footer div:last-child').textContent = '© 2024 英特尔可持续发展时间线。保留所有权利。';
+      // Light/Dark mode dropdown
+      document.getElementById('dropdownMenuButtonDark').textContent = '亮度模式';
+      document.getElementById('theme-light').textContent = '明亮';
+      document.getElementById('theme-dark').textContent = '深色';
+      // Language dropdown
+      document.getElementById('dropdownMenuButtonLang').textContent = '语言';
     });
 
     // Language switcher for العربية (Arabic)
@@ -780,7 +860,23 @@
       document.querySelector('.subscribe h2').textContent = 'اشترك في نشرتنا الإخبارية';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'أدخل بريدك الإلكتروني';
       document.querySelector('.subscribe-form button').textContent = 'اشترك';
+      document.querySelector('label[for="subscribeAgree"]').textContent = 'أوافق على تلقي الاتصالات.';
+      document.querySelector('.subscribe-form input[type="text"]').placeholder = 'أدخل اسمك';
       setSubscribeModalText('شكرًا على اشتراكك!', 'لقد اشتركت بنجاح في نشرتنا الإخبارية.');
+      // Footer
+      var footerLinks = document.querySelectorAll('.footer a');
+      if (footerLinks.length === 3) {
+        footerLinks[0].textContent = 'سياسة الخصوصية';
+        footerLinks[1].textContent = 'شروط الاستخدام';
+        footerLinks[2].textContent = 'اتصل بنا';
+      }
+      document.querySelector('.footer div:last-child').textContent = '© 2024 الجدول الزمني لاستدامة إنتل. جميع الحقوق محفوظة.';
+      // Light/Dark mode dropdown
+      document.getElementById('dropdownMenuButtonDark').textContent = 'وضع الإضاءة';
+      document.getElementById('theme-light').textContent = 'فاتح';
+      document.getElementById('theme-dark').textContent = 'داكن';
+      // Language dropdown
+      document.getElementById('dropdownMenuButtonLang').textContent = 'اللغة';
     });
 
     // Set default modal text to English on page load
