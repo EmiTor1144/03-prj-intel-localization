@@ -68,8 +68,10 @@ body {
   transition: box-shadow 0.2s;
   position: relative;
 }
-.timeline-card:hover {
+.timeline-card:hover, .timeline-card:focus-within {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transform: scale(1.04);
+  z-index: 3;
 }
 .timeline-card img {
   width: 100%;
@@ -157,10 +159,9 @@ body {
   flex: 1 1 260px;
   min-width: 260px;
   max-width: 340px;
-  background: #f3f7fa;
   border-radius: 10px;
   padding: 1.5rem 1rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.318);
   text-align: center;
 }
 .three-column-item h2 {
@@ -229,6 +230,92 @@ body {
   font-weight: 600;
   font-size: 1.3rem;
   padding: 0.7rem 1.2rem;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background: #10151a !important;
+  color: #e6e6e6 !important;
+}
+.dark-mode .hero {
+  background: linear-gradient(135deg, #1a2636 0%, #223a5e 100%) !important;
+  color: #fff !important;
+}
+.dark-mode .hero-divider {
+  border-top: 2px solid #e6e6e6 !important;
+}
+.dark-mode .timeline {
+  background: #1a2230 !important;
+}
+.dark-mode .timeline-card {
+  background: #232b39 !important;
+  color: #e6e6e6 !important;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+.dark-mode .timeline-card h2,
+.dark-mode .timeline-card h3 {
+  color: #7ecbff !important;
+}
+.dark-mode .timeline-card-desc-overlay {
+  background: rgba(30, 60, 100, 0.97) !important;
+  color: #fff !important;
+}
+.dark-mode .three-column {
+  background: #181f2a !important;
+}
+.dark-mode .three-column-item {
+  background: #232b39 !important;
+  color: #e6e6e6 !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.4);
+}
+.dark-mode .three-column-item h2 {
+  color: #7ecbff !important;
+}
+.dark-mode .learn-more {
+  background: #185bad !important;
+  color: #fff !important;
+}
+.dark-mode .learn-more:hover {
+  background: #133e7c !important;
+}
+.dark-mode .subscribe {
+  background: #1a2230 !important;
+  color: #e6e6e6 !important;
+}
+.dark-mode .subscribe h2 {
+  color: #7ecbff !important;
+}
+.dark-mode .subscribe-form input[type="email"] {
+  background: #232b39 !important;
+  color: #e6e6e6 !important;
+  border: 1px solid #3a4a5e !important;
+}
+.dark-mode .subscribe-form button {
+  background: #185bad !important;
+  color: #fff !important;
+}
+.dark-mode .subscribe-form button:hover {
+  background: #133e7c !important;
+}
+.dark-mode #subscribeSuccess {
+  color: #7ecbff !important;
+}
+.dark-mode .dropdown-menu {
+  background-color: #232b39 !important;
+  color: #fff !important;
+}
+.dark-mode .dropdown-menu .dropdown-item {
+  color: #fff !important;
+}
+.dark-mode .dropdown-menu .dropdown-item.active,
+.dark-mode .dropdown-menu .dropdown-item:active,
+.dark-mode .dropdown-menu .dropdown-item:hover {
+  background-color: #185bad !important;
+  color: #fff !important;
+}
+.dark-mode .btn-secondary.dropdown-toggle {
+  background-color: #232b39 !important;
+  color: #fff !important;
 }
 
 @media (max-width: 900px) {
