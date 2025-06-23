@@ -278,6 +278,12 @@
       modal.show();
     });
 
+    // Helper to update subscribe modal text
+    function setSubscribeModalText(title, body) {
+      document.getElementById('subscribeModalLabel').textContent = title;
+      document.querySelector('#subscribeModal .modal-body').textContent = body;
+    }
+
     // Language switcher for Español
     document.getElementById('lang-es').addEventListener('click', function(e) {
       e.preventDefault();
@@ -356,7 +362,7 @@
       document.querySelector('.subscribe h2').textContent = 'Suscríbete a nuestro boletín';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Introduce tu correo electrónico';
       document.querySelector('.subscribe-form button').textContent = 'Suscribirse';
-      document.getElementById('subscribeSuccess').textContent = '¡Gracias por suscribirte!';
+      setSubscribeModalText('¡Gracias por suscribirte!', 'Te has suscrito exitosamente a nuestro boletín.');
     });
 
     // Language switcher for English
@@ -437,7 +443,7 @@
       document.querySelector('.subscribe h2').textContent = 'Subscribe to our Newsletter';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Enter your email';
       document.querySelector('.subscribe-form button').textContent = 'Subscribe';
-      document.getElementById('subscribeSuccess').textContent = 'Thank you for subscribing!';
+      setSubscribeModalText('Thank you for subscribing!', 'You have successfully subscribed to our newsletter.');
     });
 
     // Language switcher for Français
@@ -518,7 +524,7 @@
       document.querySelector('.subscribe h2').textContent = 'Abonnez-vous à notre newsletter';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Entrez votre e-mail';
       document.querySelector('.subscribe-form button').textContent = 'S\'abonner';
-      document.getElementById('subscribeSuccess').textContent = 'Merci pour votre abonnement !';
+      setSubscribeModalText('Merci pour votre abonnement !', 'Vous vous êtes abonné avec succès à notre newsletter.');
     });
 
     // Language switcher for Deutsch
@@ -599,7 +605,7 @@
       document.querySelector('.subscribe h2').textContent = 'Abonnieren Sie unseren Newsletter';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'Geben Sie Ihre E-Mail-Adresse ein';
       document.querySelector('.subscribe-form button').textContent = 'Abonnieren';
-      document.getElementById('subscribeSuccess').textContent = 'Danke für Ihr Abonnement!';
+      setSubscribeModalText('Danke für Ihr Abonnement!', 'Sie haben sich erfolgreich für unseren Newsletter angemeldet.');
     });
 
     // Language switcher for 中文 (Chinese)
@@ -680,7 +686,7 @@
       document.querySelector('.subscribe h2').textContent = '订阅我们的新闻通讯';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = '请输入您的邮箱';
       document.querySelector('.subscribe-form button').textContent = '订阅';
-      document.getElementById('subscribeSuccess').textContent = '感谢您的订阅！';
+      setSubscribeModalText('感谢您的订阅！', '您已成功订阅我们的新闻通讯。');
     });
 
     // Language switcher for العربية (Arabic)
@@ -761,8 +767,11 @@
       document.querySelector('.subscribe h2').textContent = 'اشترك في نشرتنا الإخبارية';
       document.querySelector('.subscribe-form input[type="email"]').placeholder = 'أدخل بريدك الإلكتروني';
       document.querySelector('.subscribe-form button').textContent = 'اشترك';
-      document.getElementById('subscribeSuccess').textContent = 'شكرًا على اشتراكك!';
+      setSubscribeModalText('شكرًا على اشتراكك!', 'لقد اشتركت بنجاح في نشرتنا الإخبارية.');
     });
+
+    // Set default modal text to English on page load
+    setSubscribeModalText('Thank you for subscribing!', 'You have successfully subscribed to our newsletter.');
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
