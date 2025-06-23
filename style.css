@@ -75,7 +75,7 @@ body {
   width: 100%;
   max-width: 180px;
   height: auto;
-  border-radius: 8px;
+  border: 1px solid #000000;
   margin: 0.7rem 0;
 }
 .timeline-card h2 {
@@ -95,7 +95,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 104, 181, 0.92);
+  background: rgba(15, 81, 132, 0.92);
   color: #fff;
   display: flex;
   align-items: center;
@@ -127,15 +127,18 @@ body {
 
 /* Custom scrollbar for Webkit browsers */
 .timeline-cards::-webkit-scrollbar {
-  height: 10px;
+  height: 24px;
+  width: 18px;
 }
 .timeline-cards::-webkit-scrollbar-thumb {
   background: #0068b5;
-  border-radius: 6px;
+  border-radius: 10px;
+  min-height: 24px;
+  min-width: 18px;
 }
 .timeline-cards::-webkit-scrollbar-track {
   background: #eaf1f8;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .three-column {
@@ -169,7 +172,7 @@ body {
   display: inline-block;
   margin-top: 1rem;
   color: #fff;
-  background: #0068b5;
+  background: #0a79ce;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
   text-decoration: none;
@@ -177,7 +180,7 @@ body {
   transition: background 0.2s;
 }
 .learn-more:hover {
-  background: #004a80;
+  background: #0b43a2;
 }
 
 .subscribe {
